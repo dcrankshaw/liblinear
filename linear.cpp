@@ -29,7 +29,7 @@ static void print_string_stdout(const char *s)
 }
 static void print_null(const char *s) {}
 
-static void (*liblinear_print_string) (const char *) = &print_string_stdout;
+static void (*liblinear_print_string) (const char *) = &print_null;
 
 #if 1
 static void info(const char *fmt,...)
